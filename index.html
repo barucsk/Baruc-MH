@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <style>
+      body {
+  background-color: #E5E5E5;
+}
+    * {
+  padding: 0;
+  margin: 0;
+}
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+.wrapper { 
+  margin: auto;
+  overflow:hidden;
+}
+header {
+  background: rgba(0,0,0);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.logo{
+  padding: 3px;
+}
+.fi{
+  
+}
+.fi2{
+  padding-left: 33%;
+}
+.foto{
+  float:left;
+  width:450px;
+  height:450px;
+  border-radius: 450px;
+  border:10px solid black;
+}
+.aboutme{
+  padding: 10px;
+  color: #E5E5E5;
+background:black
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #E5E5E5;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #111;
+}
+.contenido {
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+    </style>
+    <body>
+      
+        <header>
+            <section class="wrapper">
+                  <nav>
+                      <ul><a href="#"><img class="logo" src="logo.png" width="50px" height="50px" style="float:left"></a>
+                          <li><a href="#">Baruc MH</a></li>
+                          <li style="float:right"><a href="#">Languaje</a></li>
+                          <li style="float:right"><a href="#">Contacto</a></li>
+                          <li style="float:right"><a href="#">Proyectos</a></li>
+                          <li style="float:right"><a href="#">Sobre mí</a></li>
+                      </ul>
+              </nav>
+              </section>
+          </header>
+          
+          <section class="contenido wrapper">
+            <div class="fi"><img class="foto" src="foto.jpg"></div>
+            <div class="fi2"><p class="aboutme">Yo soy Baruc Murguia
+            </p></div>
+          </section>
+    </body>
+</html>
