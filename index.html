@@ -12,25 +12,30 @@ body {
   margin: 0;
 }
 
+
+
+.contenido {
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .foto{
   float:left;
   width:450px;
   height:450px;
   border-radius: 450px;
-  border:10px solid black;
-}
-
-.contenido {
-  padding-top: 10%;
-  padding-left: 5%;
+  border:5px solid black;
 }
 
 .aboutme{
-  padding: 10px;
+  float: right;
+  width:50%;
+  height:350px;
+  padding: 50px;
   color: #E5E5E5;
   background:black;
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  border-radius: 50px;
   margin-bottom: 20px;
 }
     </style>
@@ -39,8 +44,8 @@ body {
         <header>
             <section>
                   <nav>
-                      <ul><a href="#"><img class="logo" src="logo.png" width="50px" height="50px" style="float:left"></a>
-                          <li><a href="#">Baruc MH</a></li>
+                      <ul><a href="#about"><img class="logo" src="logo.png" width="50px" height="50px" style="float:left"></a>
+                          <li><a href="#about">Baruc MH</a></li>
                           <li style="float:right"><a href="#">Languaje</a></li>
                           <li style="float:right"><a href="#">Contacto</a></li>
                           <li style="float:right"><a href="#">Proyectos</a></li>
@@ -50,13 +55,13 @@ body {
               </section>
           </header>
           
-          <section class="contenido">
+          <section class="contenido" id="about">
             <div><img class="foto" src="foto.jpg"></div>
-            <div><p class="aboutme">Soy un generalista que disfruta de siempre estar aprendiendo cosas nuevas, sobre cada aspecto
-                                    que llame mi atencion. Desde el deporte, la salud, finanzas, relaciones, espiritualidad y por
-                                    supuesto mi ambito profesional. Yo soy Baruc Murguia. Full stack developer con conocimientos
-                                    en multiples lenguajes de programacion, bases de datos, API's, Servidores etc. En esta pagina 
-                                    puedes hechar un vistaso a algunos de mis proyectos personales.
+            <div class="parrafo"><p class="aboutme">Soy un generalista que disfruta de siempre estar aprendiendo cosas nuevas sobre cada aspecto
+                                    que llame mi atención. Desde el deporte, la salud, finanzas, relaciones, espiritualidad y por
+                                    supuesto mi ámbito profesional. Yo soy Baruc Murguia. Full stack developer con conocimientos
+                                    en múltiples lenguajes de programación, bases de datos, API's, Servidores etc. En esta página 
+                                    puedes hechar un vistazo a algunos de mis proyectos personales.
              </p></div>
           </section>
     </body>
