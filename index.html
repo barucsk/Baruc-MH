@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="styles/stylesIndex.css">
+      <link rel="stylesheet" href="styles/stylesite.css">
       <link rel="stylesheet" href="styles/navbar.css">
+      <title>Baruc MH</title>
     </head>
     <style>
 
@@ -33,6 +34,58 @@
   text-align: justify;
   line-height : 33px;
 }
+.project{
+  float: right;
+  width:90%;
+  height:350px;
+  padding: 50px;
+  color: #E5E5E5;
+  background:black;
+  display: block;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-align: justify;
+  line-height : 33px;
+}
+.tecs{
+  float: right;
+  width:90%;
+  height:450px;
+  padding: 50px;
+  color: #E5E5E5;
+  background:black;
+  display: block;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-align: justify;
+  line-height : 33px;
+}
+
+.br{
+  float: right;
+  width:90%;
+  height:200px;
+  color: #E5E5E5;
+}
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+}
+
+.brands__item {
+  background: #eee;
+}
+
+.brands__item img {
+  display: block;
+  /* Make sure max-width is added */
+  max-width: 100%;
+  width: 100px;
+  object-fit: contain;
+}
     </style>
     <body>
       
@@ -43,22 +96,43 @@
                 <li><a href="#about">Baruc MH</a></li>
                 <li style="float:right"><a href="#">Languaje</a></li>
                 <li style="float:right"><a href="#">Contacto</a></li>
-                <li style="float:right"><a href="#">Proyectos</a></li>
-                <li style="float:right"><a href="#">Sobre mí</a></li>
+                <li style="float:right"><a href="#projects">Proyectos</a></li>
+                <li style="float:right"><a href="#about">Sobre mí</a></li>
               </ul>
             </nav>
           </section>
         </header>
           
           <section class="contenido" id="about">
-            <div><img class="foto shadow" src="img/foto.jpg"></div>
-            <div class="parrafo"><p class="aboutme shadow">Soy un generalista que disfruta de siempre estar aprendiendo cosas nuevas sobre 
+            <img class="foto shadow" src="img/foto.jpg">
+            <p class="aboutme shadow">Soy un generalista que disfruta de siempre estar aprendiendo cosas nuevas sobre 
                                     cada aspecto que llame mi atención. Desde el deporte, la salud, finanzas, relaciones, espiritualidad y por
-                                    supuesto mi ámbito profesional. Yo soy Baruc Murguia. Ingeniero en informatica Full stack developer 
+                                    supuesto mi ámbito profesional. Yo soy Baruc Murguia. Ingeniero en informática Full stack developer 
                                     con conocimientos en múltiples lenguajes de programación, bases de datos, API's, Servidores, administracion 
                                     de redes etc. En esta página puedes hechar un vistazo a algunos de mis proyectos y las tecnologias con
                                     las que fueron desarrollados.
-             </p></div>
+             </p>
+             <div class="br"></div>
+             <div class="tecs shadow"><h1 style="text-align:  center;">Tecnologías</h1>
+              <ul class="brands">
+                <li >
+                  
+                    <img src="img/tecs/c++.png">
+                  
+                </li>
+                <li><img src="img/tecs/c.png"></li>
+                <li><img src="img/tecs/vs.png"></li>
+                <li><img src="img/tecs/unity.png"></li>
+                <li><img src="img/tecs/linux.jpg"></li>
+                <li><img src="img/tecs/2560px-Node.js_logo.svg.png"></li>
+                <li><img src="img/tecs/html.png"></li>
+                <li><img src="img/tecs/css.png"></li>
+                <li><img src="img/tecs/php.png"></li>
+                <li><img src="img/tecs/sql.png"></li>
+              </ul>
+            </div>
+             <div class="br"></div>
+             <p class="project shadow" id="projects"><iframe width="560" height="315" src="https://www.youtube.com/embed/YrS7dmuJpi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
           </section>
     </body>
 </html>
