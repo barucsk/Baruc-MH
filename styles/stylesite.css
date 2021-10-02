@@ -15,10 +15,12 @@ body {
 
   /***************************************************************/
   .contenido {
-    padding-top: 10%;
+    padding-top: 12%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 37%;
   }
+
   .foto{
     float:left;
     width:450px;
@@ -41,6 +43,7 @@ body {
     text-align: justify;
     line-height : 33px;
   }
+
   .project{
     float: right;
     width:90%;
@@ -69,27 +72,25 @@ body {
     text-align: justify;
     line-height : 33px;
   }
-  
-  .br{
-    float: right;
-    width:90%;
-    height:200px;
-    color: #E5E5E5;
-  }
+
   .brands {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 3rem;
+    list-style: none;
   }
-  
+  div h1{
+    text-align: center;
+    padding-bottom: 50px;
+  }
   .brands__item {
     background: #eee;
   }
-  
+
   .brands__item img {
     display: block;
     /* Make sure max-width is added */
-    max-width: 100%;
+    max-width: 100;
     width: 100px;
     object-fit: contain;
   }
