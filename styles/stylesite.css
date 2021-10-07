@@ -1,12 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
     background-color: #E5E5E5;
   }
-
-* {
-    padding: 0;
-    margin: 0;
-}
 
 .shadow{
     box-shadow:  0 6px 9px rgba(0, 0, 0, 0.9);
@@ -14,36 +13,42 @@ body {
 
 
   /***************************************************************/
-  .contenido {
-    padding-top: 12%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 37%;
+
+  .test{
+
+    margin-top: 12%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    background: yellow;
+    height: 450px;/*66vh?*/
+    position: relative;
   }
 
+  
+
   .foto{
-    float:left;
-    width:450px;
-    height:450px;
+    position: absolute;
+    
+    max-width: 37%;
     border-radius: 450px;
     border:3px solid black;
+    display: inline;
   }
   
   .aboutme{
-    float: right;
+    position: absolute;
+    left: 40%;
     width:50%;
-    height:350px;
-    padding: 50px;
+   
+    padding: 5%;
     color: #E5E5E5;
     background:black;
-    display: block;
     border-radius: 50px;
-    margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 1.9vw;
     text-align: justify;
-    line-height : 33px;
+    display: inline;
   }
-
   .project{
     float: right;
     width:90%;
@@ -71,6 +76,7 @@ body {
     font-size: 25px;
     text-align: justify;
     line-height : 33px;
+ 
   }
 
   .brands {
@@ -95,28 +101,38 @@ body {
     object-fit: contain;
   }
 
-  /*********************/
-  footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 5%;
-    height: 20%;
-    color: black;
+.contactform{
+  box-sizing: border-box;
+  max-width:40%;
+    height:450px;
+    padding: 3%;
+    color: #E5E5E5;
+    background:black;
+    border-radius: 50px;
+    margin: auto;
     text-align: center;
-  }
-  
-  footer i{
-    display: block;
-    font-size: 3em;
-    margin-top: 15%;
-    color: black;
-  }
 
-  footer a{
-    text-decoration: none;
-  }
-  footer i:hover{
-    font-size: 3.5em;
-  }
+}
+
+.links{
+  width: 50%;
+  float: left;
+  padding-bottom: 3%;
+}
+.contactform a{
+  color: #E5E5E5;
+  text-decoration: none;
+}
+
+.contactform i{
+  font-size: 3em;
+}
+
+.contactform label{
+  color: #E5E5E5;
+
+}
+
+.contactform input{
   
+}

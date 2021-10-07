@@ -4,20 +4,23 @@
     <title>Baruc MH</title>
     <meta charset="UTF-8" />
    
-    <link rel="stylesheet" href="styles/navbar.css" />
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/stylesite.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <!--<link rel="stylesheet" href="styles.css" />-->
   </head>
   <body>
     <!---------------------------------NAVBAR----------------------------------->
-    <header>
+    <header class="shadow">
       <section>
         <nav>
-          <ul class="shadow">
+          <ul>
             <a href="#about"><img class="logo" src="img/logo.png" /></a>
             <li><a href="#about">Baruc MH</a></li>
             <li style="float: right"><a href="#">Languaje</a></li>
-            <li style="float: right"><a href="#">Contacto</a></li>
+            <li style="float: right"><a href="#contact">Contacto</a></li>
             <li style="float: right"><a href="#projects">Proyectos</a></li>
             <li style="float: right"><a href="#about">Sobre mí</a></li>
           </ul>
@@ -30,7 +33,7 @@
        <a href="https://github.com/barucsk" target="_blank"><i class="bi-github"></i></a>
     </footer>
     <!-----------------------ABOUT ME------------------------------>
-    <section class="contenido" id="about">
+    <div class="test">
       <img class="foto shadow" src="img/foto.jpg" />
       <p class="aboutme shadow">
         Soy un generalista que disfruta de siempre estar aprendiendo cosas
@@ -42,9 +45,10 @@
         página puedes hechar un vistazo a algunos de mis proyectos y las
         tecnologias con las que fueron desarrollados.
       </p>
-    </section>
+      
+    </div>
     <!-------------------TECNOLOGIES------------------------------------->
-    <section class="contenido ">
+    <section class="test ">
       <div class="tecs shadow">
         <h1>Tecnologías</h1>
         <ul class="brands">
@@ -62,7 +66,7 @@
       </div>
     </section>
     <!-------------------projects------------------------------------->
-    <section class="contenido" id="projects">
+    <section class="test" id="projects">
       <article class="tecs shadow" >
         <iframe
           width="560"
@@ -75,5 +79,54 @@
         ></iframe>
       </article>
     </section>
+    <!--------------------Contact------------------------------------------->
+    <div class="test">
+        <form class=contactform id=contact method="GET">
+          <h1>Contacto</h1>
+          <div class="links">
+            <a href="files/cv.pdf" target="_blank">
+              <i class="bi-file-earmark-person"></i>
+              <br>
+              <label>cv</label>
+            </a>
+          </div>
+          <div class="links">
+            <a href="mailto: contacto@barucmh.com" target="_blank">
+              <i class="bi-envelope"></i>
+            </a>
+            <br>
+            <label>info@barucmh.com</label>
+          </div>
+          
+          
+          
+          
+          <div>
+            <input type="text" id="name" name="name" placeholder="*Nombre" required="true"/>
+          </div>
+          <div>
+            <input type="email" id="mail" name="mail" placeholder="*Correo" required="true"/>
+          </div>
+          <div class="container">
+            <input type="tel" id="phone" name="phone" placeholder="Telefono(Opcional)" 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+            <!--<input id="phone" type="tel" name="phone" />-->
+          </div>
+          <div>
+            <input type="text" id="message" name="message" placeholder="*Mensaje" required="true"/>
+          </div>
+          <div>
+            <input type="submit" value="enviar"/>
+          </div>
+        </form>
+    </div>
   </body>
+  <!--
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>-->
 </html>
