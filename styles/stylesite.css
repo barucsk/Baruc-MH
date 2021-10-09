@@ -11,7 +11,13 @@ body {
     box-shadow:  0 6px 9px rgba(0, 0, 0, 0.9);
   }
 
+  .shadow_white{
+    box-shadow:  0 1px 4px rgba(255, 255, 255, 0.9);
+  }
 
+  .shadow_letters{
+    text-shadow: 0 0px 2px rgba(255, 255, 255, 0.9);;
+  }
   /***************************************************************/
 
   .test{
@@ -49,34 +55,39 @@ body {
     text-align: justify;
     display: inline;
   }
-  .project{
-    float: right;
-    width:90%;
-    height:350px;
-    padding: 50px;
-    color: #E5E5E5;
-    background:black;
-    display: block;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    font-size: 25px;
-    text-align: justify;
-    line-height : 33px;
-  }
+
   .tecs{
-    float: right;
-    width:90%;
-    height:450px;
-    padding: 50px;
+    width:100%;
+    height: 450px;
     color: #E5E5E5;
     background:black;
-    display: block;
     border-radius: 50px;
-    margin-bottom: 20px;
     font-size: 25px;
     text-align: justify;
     line-height : 33px;
  
+  }
+
+  .c_projects{
+    box-sizing: border-box;
+    width:100%;
+    height: 450px;
+    color: #E5E5E5;
+    background:black;
+    border-radius: 50px;
+    text-align: center;
+    padding: 3%;
+  }
+  .video
+  {
+    float: left;
+    border: none;
+    display: inline;
+  }
+
+  .c_projects h1{
+    color: #E5E5E5;
+    padding-bottom: 3%;
   }
 
   .brands {
@@ -100,24 +111,29 @@ body {
     width: 100px;
     object-fit: contain;
   }
-
+/********************Contact************************/
 .contactform{
   box-sizing: border-box;
   max-width:40%;
-    height:450px;
-    padding: 3%;
-    color: #E5E5E5;
-    background:black;
-    border-radius: 50px;
-    margin: auto;
-    text-align: center;
+  height:450px;
+  padding: 3%;
+  color: #E5E5E5;
+  background:black;
+  border-radius: 50px;
+  margin: auto;
+  text-align: center;
 
+}
+
+.contactform h1{
+  padding-bottom: 3%;
 }
 
 .links{
   width: 50%;
   float: left;
-  padding-bottom: 3%;
+  padding-top: 3%;
+  padding-bottom: 6%;
 }
 .contactform a{
   color: #E5E5E5;
@@ -125,7 +141,7 @@ body {
 }
 
 .contactform i{
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .contactform label{
@@ -133,6 +149,48 @@ body {
 
 }
 
-.contactform input{
-  
+.contactform .inputs input{
+  width: 80%;
+  padding: 10px ;
+  background: #E5E5E5;
+  color: black;
+  border-radius: 50px;
+  border:none;
+  margin-bottom: 10px;
+}
+
+.name_style{
+  width: 60%;
+  margin: auto;
+}
+
+.contact_style{
+  float: left;
+  width: 50%;
+  margin: auto;
+}
+
+.contactform .message_style textarea{
+  width:90%;
+  height: 80px;
+  resize: none;
+  padding: 10px;
+  background: #E5E5E5;
+  border-radius: 20px;
+  border:none;
+}
+
+.button_submit input{
+  margin-top: 2%;
+  margin-right: 3%;
+  width: 30%;
+  padding: 3%;
+  float: right;
+  border-radius: 20px;
+  background: #E5E5E5;
+  border:none;
+}
+
+.button_submit input:hover{
+  background: #888888;
 }

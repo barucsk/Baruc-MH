@@ -66,23 +66,25 @@
       </div>
     </section>
     <!-------------------projects------------------------------------->
-    <section class="test" id="projects">
-      <article class="tecs shadow" >
+    <div class="test" id="projects">
+      <article class="c_projects shadow" >
+        <h1>Talk to LSM</h1>
         <iframe
-          width="560"
-          height="315"
+          class="video"
+         
           src="https://www.youtube.com/embed/YrS7dmuJpi8"
           title="YouTube video player"
-          frameborder="1"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+        
       </article>
-    </section>
+    </div>
     <!--------------------Contact------------------------------------------->
     <div class="test">
         <form class=contactform id=contact method="GET">
           <h1>Contacto</h1>
+          <!------Links to my cv and email------------>
           <div class="links">
             <a href="files/cv.pdf" target="_blank">
               <i class="bi-file-earmark-person"></i>
@@ -97,26 +99,23 @@
             <br>
             <label>info@barucmh.com</label>
           </div>
-          
-          
-          
-          
-          <div>
-            <input type="text" id="name" name="name" placeholder="*Nombre" required="true"/>
+          <!--INPUTS-->
+          <div class="inputs name_style">
+            <input class="shadow_white" type="text" id="name" name="name" placeholder="*Nombre" required="true"/>
           </div>
-          <div>
-            <input type="email" id="mail" name="mail" placeholder="*Correo" required="true"/>
+          <div class="inputs contact_style">
+            <input class="shadow_white" type="email" id="mail" name="mail" placeholder="*Correo" required="true"/>
           </div>
-          <div class="container">
-            <input type="tel" id="phone" name="phone" placeholder="Telefono(Opcional)" 
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
-            <!--<input id="phone" type="tel" name="phone" />-->
+          <div class="inputs contact_style">
+            <input class="shadow_white" type="tel" id="phone" name="phone" placeholder="Telefono(Opcional)" />
+            <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+            <input id="phone" type="tel" name="phone" />-->
           </div>
-          <div>
-            <input type="text" id="message" name="message" placeholder="*Mensaje" required="true"/>
+          <div class="inputs message_style">
+            <textarea type="text" id="message" name="message" placeholder="*Mensaje" required="true" class="shadow_white"></textarea>
           </div>
-          <div>
-            <input type="submit" value="enviar"/>
+          <div class="button_submit ">
+            <input type="submit" value="Enviar" class="shadow_white"/>
           </div>
         </form>
     </div>
