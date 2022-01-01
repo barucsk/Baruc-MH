@@ -10,32 +10,24 @@ body {
 .shadow{
     box-shadow:  0 6px 9px rgba(0, 0, 0, 0.9);
   }
-
-  .shadow_white{
-    box-shadow:  0 1px 4px rgba(255, 255, 255, 0.9);
-  }
-
-  .shadow_letters{
-    text-shadow: 0 0px 2px rgba(255, 255, 255, 0.9);;
+  div h1{
+    padding-bottom: 3%;
   }
   /***************************************************************/
+  /***********************AREA DIV***********************************/
+ div.box{
 
-  .test{
-
-    margin-top: 12%;
+    padding-top: 12%;
     margin-right: 5%;
-    margin-bottom: 5%;
+   /*margin-bottom: 5%;*/
     margin-left: 5%;
-    background: yellow;
+    /*background: yellow;*/
     height: 450px;/*66vh?*/
     position: relative;
   }
-
-  
-
+/*********************ABOUT ME**********************************/
   .foto{
     position: absolute;
-    
     max-width: 37%;
     border-radius: 450px;
     border:3px solid black;
@@ -46,7 +38,6 @@ body {
     position: absolute;
     left: 40%;
     width:50%;
-   
     padding: 5%;
     color: #E5E5E5;
     background:black;
@@ -55,39 +46,17 @@ body {
     text-align: justify;
     display: inline;
   }
-
+/**********************TECNOLOGIES********************************/
   .tecs{
-    width:100%;
-    height: 450px;
-    color: #E5E5E5;
-    background:black;
-    border-radius: 50px;
-    font-size: 25px;
-    text-align: justify;
-    line-height : 33px;
- 
-  }
-
-  .c_projects{
     box-sizing: border-box;
     width:100%;
     height: 450px;
     color: #E5E5E5;
     background:black;
     border-radius: 50px;
-    text-align: center;
+    font-size: 25px;
     padding: 3%;
-  }
-  .video
-  {
-    float: left;
-    border: none;
-    display: inline;
-  }
-
-  .c_projects h1{
-    color: #E5E5E5;
-    padding-bottom: 3%;
+    text-align: center;
   }
 
   .brands {
@@ -96,10 +65,7 @@ body {
     grid-gap: 3rem;
     list-style: none;
   }
-  div h1{
-    text-align: center;
-    padding-bottom: 50px;
-  }
+ 
   .brands__item {
     background: #eee;
   }
@@ -111,6 +77,29 @@ body {
     width: 100px;
     object-fit: contain;
   }
+/**********************PROJECTS******************************/
+  .c_projects{
+    box-sizing: border-box;
+    width:100%;
+    height: 450px;
+    color: #E5E5E5;
+    background:black;
+    border-radius: 50px;
+    text-align: center;
+    padding: 3%;
+    font-size: 25px;
+  }
+
+
+  .video
+  {
+    float: left;
+    border: none;
+    display: inline;
+    width: 40%;
+    height: 250px;
+  }
+
 /********************Contact************************/
 .contactform{
   box-sizing: border-box;
@@ -125,9 +114,7 @@ body {
 
 }
 
-.contactform h1{
-  padding-bottom: 3%;
-}
+
 
 .links{
   width: 50%;
