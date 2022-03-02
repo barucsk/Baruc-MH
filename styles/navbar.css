@@ -1,15 +1,17 @@
+
 header {
   background: rgba(0, 0, 0);
   width: 100%;
   top:0px;
   position:fixed;
   z-index: 10;
+  
 }
 
 .logo {
-  padding: 3px;
-  max-width: 50px;
+  max-width: 4vw;
   float: left;
+  
 }
 
 nav ul {
@@ -19,16 +21,26 @@ nav ul {
 nav ul li {
   float: left;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1.4vw;
 }
 
 nav ul li a {
   display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
-  padding: 20px;
+  padding: 1.2vw;
   color: #e5e5e5;
   text-decoration: none;
   
 }
 nav ul li:hover {
   background: #111;
+}
+
+@media screen and (max-width:480px) {
+  nav ul li {
+    font-size: 1.6vh;
+    padding: 1.5vw;
+  }
+  .logo {
+    max-width:4.2vh;
+  }
 }

@@ -2,12 +2,19 @@
 <html>
   <head>
     <title>Baruc MH</title>
+    <link rel="shortcut icon" href="/img/logo.png" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles/stylesite.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <!--<link rel="stylesheet" href="styles.css" />-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/styles/stylesite.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/aside.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
   </head>
   <body>
     <!---------------------------------NAVBAR----------------------------------->
@@ -15,123 +22,286 @@
       <section>
         <nav>
           <ul>
-            <a href="#about"><img class="logo" src="img/logo.png" /></a>
+            <a href="#about"><img class="logo" src="/img/logo.png" /></a>
             <li><a href="#about">Baruc MH</a></li>
             <li style="float: right"><a href="/es/index.html">Spanish</a></li>
             <li style="float: right"><a href="#contact">Contact</a></li>
             <li style="float: right"><a href="#projects">Projects</a></li>
-            <li style="float: right"><a href="#about">About me</a></li>
+            <li style="float: right"><a href="#about">About</a></li>
           </ul>
         </nav>
       </section>
     </header>
-    <!-------------------------FOOTER--------------------------------->
-    <footer>
-       <a href="https://www.linkedin.com/in/barucmh" target="_blank"><i class="bi-linkedin" target="_blank"></i></a>
-       <a href="https://github.com/barucsk" target="_blank"><i class="bi-github"></i></a>
-    </footer>
-    <!-----------------------ABOUT ME------------------------------>
-    <div class="box"  id="about">
-      <img class="foto shadow" src="img/foto.jpg"/>
-      <p class="aboutme shadow">
-        Soy un generalista que disfruta de siempre estar aprendiendo cosas
-        nuevas sobre cada aspecto que llame mi atención. Desde el deporte, la
-        salud, finanzas, relaciones, espiritualidad y por supuesto mi ámbito
-        profesional. Yo soy Baruc Murguia. Ingeniero en informática Full stack
-        developer con conocimientos en múltiples lenguajes de programación,
-        bases de datos, API's, Servidores, administracion de redes etc. En esta
-        página puedes hechar un vistazo a algunos de mis proyectos y las
-        tecnologias con las que fueron desarrollados.
-      </p>
-      
-    </div>
 
-    <!-------------------projects------------------------------------->
-    <div class="box" id="projects">
-      <article class="c_projects shadow" >
-        <h1>Talk to LSM</h1>
-        <iframe
-          class="video"
-          src="https://www.youtube.com/embed/YrS7dmuJpi8"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <p>ladsasdasdasdadasdasdasdasdasdadadadasdasdasdasdasdasd
-          ladsasdasdasdadasdasdasdasdasdadadadasdasdasdasdasdasd
-          ladsasdasdasdadasdasdasdasdasdadadadasdasdasdasdasdasd
-          ladsasdasdasdadasdasdasdasdasdadadadasdasdasdasdasdasd
-          ladsasdasdasdadasdasdasdasdasdadadadasdasdasdasdasdasd
-          ladsasdasdasdadasdasdasdasdasdadadadasdasdasdasdasdasd
-          ladsasdasdasdadasdasdasdasdasdadadadasdasdasdasdasdasd
-          ladsasdasdasdadasdasdasdasdasdadadadasdasdasdasdasdasd
-        </p>
-      </article>
-    </div>
-    <!--------------------Contact------------------------------------------->
-    <div class="box" id="contact">
-        <form class="contactform  shadow"method="GET">
-          <h1>Contacto</h1>
+    <!-------------------------aside--------------------------------->
+    <aside>
+      <a href="https://www.linkedin.com/in/barucmh" target="_blank"
+        ><i class="bi-linkedin" target="_blank"></i
+      ></a>
+      <a href="https://github.com/barucsk" target="_blank"
+        ><i class="bi-github"></i
+      ></a>
+    </aside>
+    <div class="content">
+      <!-----------------------ABOUT ME------------------------------>
+      <figure class="mainPhoto" id="about">
+        <img class="foto shadow" src="/img/foto.jpg" />
+      </figure>
+
+      <div class="boxIntroduction">
+        <div class="box shadow">
+          <p class="aboutme">
+            Since I was a child I always tried to make all things more simple
+            and faster. That's why when I discovered programming I became
+            passionate, especially algorithms. And the fact of automating things
+            has led me to learn and acquire a lot of knowledge. I am Baruch
+            Murguia. Computer engineer and Full stack developer with knowledge
+            in multiple programming languages, databases, API's, Servers,
+            network administration, etc. On this page, you can see some of my
+            projects and the technologies with which they were developed.
+          </p>
+        </div>
+      </div>
+
+      <!-------------------projects------------------------------------->
+      <div class="lettersProject" id="projects">
+        <h1>PROJECTS</h1>
+      </div>
+      <div class="boxProject">
+        <div class="box shadow tam">
+          <div class="project-Grid">
+            <div class="titleProject">
+              <h1>Log In PHP</h1>
+            </div>
+            <figure class="viewProject">
+              <img src="/img/LogIn/view.png" style="width: 100%" />
+            </figure>
+            <div class="resumeProject">
+              <div class="box">
+                <p class="aboutme">
+                  Security logging implementing the conexion with the database,
+                  data sanitizing and protecting the password with hashing and
+                  salt.
+                </p>
+                <br />
+                <div class="linkGit">
+                  <a href="https://github.com/barucsk/Login" target="_blank">
+                    <i class="bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxProject2">
+        <div class="box shadow">
+          <div class="project-Grid">
+            <div class="titleProject">
+              <h1>Island Bot for AlbionOnline</h1>
+            </div>
+            <figure class="viewProject">
+              <br />
+              <img src="/img/Island/View.png" style="width: 100%" />
+            </figure>
+            <div class="resumeProject">
+              <div class="box">
+                <p class="aboutme">
+                  Build on C++ this picks up the resources of your islands in
+                  the game. With this i was able to pay the annual
+                  premium($99USD price on game) only in 47hrs of execution of
+                  the program. It has its own displacement algorithm.
+                </p>
+                <br />
+                <div class="linkGit">
+                  <a href="https://github.com/barucsk/bot" target="_blank">
+                    <i class="bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxProject3">
+        <div class="box shadow">
+          <div class="project-Grid">
+            <div class="titleProject">
+              <h1>Talk to LSM</h1>
+            </div>
+            <figure class="viewProject">
+              <img src="/img/TalkToLSM/View.png" style="width: 100%" />
+              <img src="/img/TalkToLSM/tecs.png" style="width: 100%" />
+            </figure>
+            <div class="resumeProject">
+              <div class="box">
+                <p class="aboutme">
+                  Movil APP that translates using a 3D model. What you write to
+                  LSM(Mexican Signal Language). The user interface was created
+                  with Unity, the model with Blender. Also has implemented a KNN
+                  algorithm for the data analytics so we can know in which
+                  scopes there using the sentences and words. Also has
+                  implemented a Clustering algorithm to classify the consulted
+                  words that not been registered yet to assign priority on words
+                  more consulted so that ways we can start doing that animations
+                </p>
+                <br />
+                <div class="linkGit">
+                  <a
+                    href="https://github.com/barucsk/TalkToLSM"
+                    target="_blank"
+                  >
+                    <i class="bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxProject4">
+        <div class="box shadow">
+          <div class="project-Grid">
+            <div class="titleProject">
+              <h1>Crypto Tranding Tools</h1>
+            </div>
+            <figure class="viewProject">
+              <img
+                src="/img/Projects/CryptoTradingTools/view.jpg"
+                style="width: 100%"
+              />
+            </figure>
+            <div class="resumeProject">
+              <div class="box">
+                <p class="aboutme">
+                  Build on NodeJS this program gets the prices of currencies of
+                  the Bitso API and analyzes them to get signals of buy or sell.
+                  If you have synchronized your account the program can buy and
+                  sell automatically.
+                </p>
+                <br />
+                <div class="linkGit">
+                  <a
+                    href="https://github.com/barucsk/CryptoTradingTools"
+                    target="_blank"
+                  >
+                    <i class="bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxProject5">
+        <div class="box shadow">
+          <div class="project-Grid">
+            <div class="titleProject">
+              <h1>Visitor Counter</h1>
+            </div>
+            <figure class="viewProject">
+              <img
+                src="/img/Projects/VisitorCounter/view.jpg"
+                style="width: 100%"
+              />
+            </figure>
+            <div class="resumeProject">
+              <div class="box">
+                <p class="aboutme">
+                  Build on PHP offer some views of high value, like the count of
+                  unique visitors, how many times every visitor in, her time of
+                  conexion. And some graphics to make this information more
+                  interactive.
+                </p>
+                <br />
+                <div class="linkGit">
+                  <a href="https://github.com/barucsk/" target="_blank">
+                    <i class="bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contactBlock" id="contact">
+        <!--------------------Contact------------------------------------------->
+        <form class="contactform shadow" method="GET">
+          <!--<form action="save.php" class="contactform shadow" method="POST">-->
+          <h1>Contact</h1>
+          <!-- 
+          <?php if (isset($_GET['error'])) { ?>
+              <p class="error sending message">
+                <?php echo $_GET['error']; ?>
+              </p>
+          <?php }elseif(isset($_GET['succses'])) {?>
+              <p class="error sending message">
+                Mensaje enviado correctamente
+              </p>
+          <?php } ?>
+          -->
           <!------Links to my cv and email------------>
           <div class="links">
-            <a href="files/cv.pdf" target="_blank">
-              <i class="bi-file-earmark-person"></i>
-              <br>
-              <label>cv</label>
+            <a href="https://www.linkedin.com/in/barucmh" target="_blank">
+              <i class="bi-linkedin"></i>
+              <br />
+              <label>LinkedIn</label>
             </a>
           </div>
           <div class="links">
-            <a href="mailto: contacto@barucmh.com" target="_blank">
+            <a href="mailto: contact@barucmh.com" target="_blank">
               <i class="bi-envelope"></i>
             </a>
-            <br>
-            <label>info@barucmh.com</label>
+            <br />
+            <label>contact@barucmh.com</label>
           </div>
           <!--INPUTS-->
           <div class="inputs name_style">
-            <input class="shadow_white" type="text" id="name" name="name" placeholder="*Nombre" required="true"/>
+            <input
+              class="shadow_white"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="*Nombre"
+              required="true"
+            />
           </div>
           <div class="inputs contact_style">
-            <input class="shadow_white" type="email" id="mail" name="mail" placeholder="*Correo" required="true"/>
+            <input
+              class="shadow_white"
+              type="email"
+              id="mail"
+              name="mail"
+              placeholder="*Correo"
+              required="true"
+            />
           </div>
           <div class="inputs contact_style">
-            <input class="shadow_white" type="tel" id="phone" name="phone" placeholder="Telefono(Opcional)" />
-            <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
-            <input id="phone" type="tel" name="phone" />-->
+            <input
+              class="shadow_white"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Telefono(Opcional)"
+            />
           </div>
           <div class="inputs message_style">
-            <textarea type="text" id="message" name="message" placeholder="*Mensaje" required="true" class="shadow_white"></textarea>
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              placeholder="*Mensaje"
+              required="true"
+              class="shadow_white"
+            ></textarea>
           </div>
-          <div class="button_submit ">
-            <input type="submit" value="Enviar" class="shadow_white"/>
+          <div class="button_submit">
+            <input type="submit" value="Enviar" class="shadow_white" />
           </div>
         </form>
+      </div>
+      <footer class="foot"></footer>
     </div>
-        <!-------------------TECNOLOGIES------------------------------------->
-        <div class="box ">
-          <div class="tecs shadow">
-            <h1>Tecnologías</h1>
-            <ul class="brands">
-              <li><img src="img/tecs/c++.png" /></li>
-              <li><img src="img/tecs/c.png" /></li>
-              <li><img src="img/tecs/vs.png" /></li>
-              <li><img src="img/tecs/unity.png" /></li>
-              <li><img src="img/tecs/linux.jpg" /></li>
-              <li><img src="img/tecs/2560px-Node.js_logo.svg.png" /></li>
-              <li><img src="img/tecs/html.png" /></li>
-              <li><img src="img/tecs/css.png" /></li>
-              <li><img src="img/tecs/php.png" /></li>
-              <li><img src="img/tecs/sql.png" /></li>
-            </ul>
-          </div>
-        </div>
+    <!------------------------footer--------------------------------->
   </body>
-  <!--
-  <script>
-    const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
-  </script>-->
 </html>

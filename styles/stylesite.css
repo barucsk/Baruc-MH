@@ -1,183 +1,345 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-    background-color: #E5E5E5;
-  }
+  background-color: #e5e5e5;
+}
 
-.shadow{
-    box-shadow:  0 6px 9px rgba(0, 0, 0, 0.9);
-  }
-  div h1{
-    padding-bottom: 3%;
-  }
-  /***************************************************************/
-  /***********************AREA DIV***********************************/
- div.box{
+.shadow {
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.9);
+}
+div h1 {
+  /*padding-bottom: 3%;*/
+}
+/***************************************************************/
+/***********************AREA DIV***********************************/
 
-    padding-top: 12%;
-    margin-right: 5%;
-   /*margin-bottom: 5%;*/
-    margin-left: 5%;
-    /*background: yellow;*/
-    height: 450px;/*66vh?*/
-    position: relative;
-  }
 /*********************ABOUT ME**********************************/
-  .foto{
-    position: absolute;
-    max-width: 37%;
-    border-radius: 450px;
-    border:3px solid black;
-    display: inline;
-  }
+.foto {
   
-  .aboutme{
-    position: absolute;
-    left: 40%;
-    width:50%;
-    padding: 5%;
-    color: #E5E5E5;
-    background:black;
-    border-radius: 50px;
-    font-size: 1.9vw;
-    text-align: justify;
-    display: inline;
-  }
+  max-width: 100%;
+  border-radius: 450px;
+  border: 3px solid black;
+  display: inline;
+}
+
+.aboutme {
+  color: #e5e5e5;
+  font-size: 1.9vw;
+  text-align: justify;
+}
 /**********************TECNOLOGIES********************************/
-  .tecs{
-    box-sizing: border-box;
-    width:100%;
-    height: 450px;
-    color: #E5E5E5;
-    background:black;
-    border-radius: 50px;
-    font-size: 25px;
-    padding: 3%;
-    text-align: center;
-  }
+.tecs {
+  box-sizing: border-box;
+  width: 100%;
+  height: 450px;
+  color: #e5e5e5;
+  background: black;
+  border-radius: 50px;
+  font-size: 25px;
+  padding: 3%;
+  text-align: center;
+}
 
-  .brands {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 3rem;
-    list-style: none;
-  }
- 
-  .brands__item {
-    background: #eee;
-  }
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 3rem;
+  list-style: none;
+}
 
-  .brands__item img {
-    display: block;
-    /* Make sure max-width is added */
-    max-width: 100;
-    width: 100px;
-    object-fit: contain;
-  }
+.brands__item {
+  background: #eee;
+}
+
+.brands__item img {
+  display: block;
+  /* Make sure max-width is added */
+  max-width: 100;
+  width: 100px;
+  object-fit: contain;
+}
 /**********************PROJECTS******************************/
-  .c_projects{
-    box-sizing: border-box;
-    width:100%;
-    height: 450px;
-    color: #E5E5E5;
-    background:black;
-    border-radius: 50px;
-    text-align: center;
-    padding: 3%;
-    font-size: 25px;
-  }
 
 
-  .video
-  {
-    float: left;
-    border: none;
-    display: inline;
-    width: 40%;
-    height: 250px;
-  }
+.video {
+  float: left;
+  border: none;
+  display: inline;
+  width: 40%;
+  height: 250px;
+}
+
+.linkGit{
+  display: flex;
+  justify-content: center;
+}
+.linkGit i{
+  font-size: 3vw;
+  color: #e5e5e5;
+}
 
 /********************Contact************************/
-.contactform{
+.contactform {
   box-sizing: border-box;
-  max-width:40%;
-  height:450px;
-  padding: 3%;
-  color: #E5E5E5;
-  background:black;
+  width: 450px;
+  height: 450px;
+  color: #e5e5e5;
+  background: black;
   border-radius: 50px;
   margin: auto;
   text-align: center;
-
 }
-
-
-
-.links{
+.contactform h1{
+  padding: 25px;
+}
+.links {
   width: 50%;
   float: left;
   padding-top: 3%;
   padding-bottom: 6%;
 }
-.contactform a{
-  color: #E5E5E5;
+.contactform a {
+  color: #e5e5e5;
   text-decoration: none;
 }
 
-.contactform i{
+.contactform i {
   font-size: 2em;
 }
 
-.contactform label{
-  color: #E5E5E5;
-
+.contactform label {
+  color: #e5e5e5;
 }
 
-.contactform .inputs input{
+.contactform .inputs input {
   width: 80%;
-  padding: 10px ;
-  background: #E5E5E5;
+  padding: 10px;
+  background: #e5e5e5;
   color: black;
   border-radius: 50px;
-  border:none;
+  border: none;
   margin-bottom: 10px;
 }
 
-.name_style{
+.name_style {
   width: 60%;
   margin: auto;
 }
 
-.contact_style{
+.contact_style {
   float: left;
   width: 50%;
   margin: auto;
 }
 
-.contactform .message_style textarea{
-  width:90%;
+.contactform .message_style textarea {
+  width: 90%;
   height: 80px;
   resize: none;
   padding: 10px;
-  background: #E5E5E5;
+  background: #e5e5e5;
   border-radius: 20px;
-  border:none;
+  border: none;
 }
 
-.button_submit input{
+.button_submit input {
   margin-top: 2%;
   margin-right: 3%;
   width: 30%;
   padding: 3%;
   float: right;
   border-radius: 20px;
-  background: #E5E5E5;
-  border:none;
+  background: #e5e5e5;
+  border: none;
 }
 
-.button_submit input:hover{
+.button_submit input:hover {
   background: #888888;
+}
+
+div.box {
+  background-color: black;
+  border-radius: 50px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 7%;
+}
+/**************************CSS GRID***********************/
+
+.content{
+  display: grid;
+  grid-template-columns:37%;
+  margin: 12% 5%;
+  column-gap: 3%;
+  row-gap: 5%;
+ /* background-color: rgb(0, 132, 255);*/
+  grid-template-areas: "photo about"
+                      "lettersProject lettersProject"
+                      "project4 project4"
+                      "project5 project5"
+                      "project project"
+                      "project2 project2"
+                      "project3 project3"
+                      "contact contact"
+                      "foot foot";
+}
+.mainPhoto{
+  grid-area: photo;
+}
+
+.boxIntroduction{
+  grid-area: about;
+}
+.lettersProject{
+  grid-area: lettersProject;
+}
+
+.lettersProject h1{
+  text-align: center;
+  font-size: 6vw;
+  
+}
+
+.boxProject{
+  grid-area: project;
+ /* background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+.boxProject2{
+  grid-area: project2;
+ /* background-color: rgba(255, 255, 255, 0.8);*/
+}
+.boxProject3{
+  grid-area: project3;
+ /* background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+.boxProject4{
+  grid-area: project4;
+ /* background-color: rgba(255, 255, 255, 0.8);*/
+}
+.boxProject5{
+  grid-area: project5;
+ /* background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+.contactBlock{
+  grid-area: contact;
+}
+
+.project-Grid {
+  display: grid;
+  color: #e5e5e5;
+  grid-template-columns: 35%;
+  grid-template-areas: "title title"
+                        "view description";
+                        
+}
+
+.titleProject{
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+}
+
+.viewProject{
+  grid-area: view;
+  padding-top: 10%;
+ /* background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+
+div.resumeProject {
+ 
+  grid-area: description;
+  /* background-color: rgba(255, 255, 255, 0.8);*/
+}
+.a{
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 7%;
+}
+
+.foot{
+  grid-area: foot;
+  background-color: #e5e5e5;
+  border-radius: 50px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0.1%;
+  width: 100%;
+}
+
+@media screen and (max-width:480px) {
+  .content{
+    grid-template-columns:100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    row-gap: 2%;
+    grid-template-areas: "photo"
+                      "about"
+                      "lettersProject"
+                      "project4"
+                      "project4"
+                      "project5"
+                      "project5"
+                      "project "
+                      "project"
+                      "project2"
+                      "project2"
+                      "project3"
+                      "project3"
+                      "contact"
+                      "foot";
+  }
+
+  .project-Grid {
+
+    grid-template-columns:100%;
+    grid-template-areas: "title"
+                          "view"
+                          "description";
+                          
+  }
+
+  .aboutme {
+    font-size: 10px;
+  }
+  div.box {
+    background-color: black;
+    border-radius: 20px;
+  }
+
+  .contactform {
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 450px;
+    padding: 3%;
+    color: #e5e5e5;
+    background: black;
+    border-radius: 50px;
+    margin: auto;
+    text-align: center;
+  }
+  /*.boxProject2 {
+    height: 600px;
+    grid-template-columns: 100%;
+    grid-template-areas: "title"
+                          "view"
+                          "description";
+  }*/
 }

@@ -1,4 +1,4 @@
-footer {
+aside {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -6,13 +6,13 @@ footer {
     text-align: center;
   }
   
-  footer i{
+  aside i{
     display: block;
-    font-size: 3em;
+    font-size: 3vw;
     margin-bottom: 15%;
     color: black;
   }
 
-  footer i:hover{
-    font-size: 3.5em;
+  aside i:hover{
+    font-size: 3.5vw;
   }
